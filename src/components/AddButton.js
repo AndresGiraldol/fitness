@@ -2,12 +2,13 @@ import React from "react";
 import "./styles/AddButton.css";
 import buttomImg from "../images/add.png";
 import { Link } from "react-router-dom";
-function AddButton(props) {
+
+const AddButton = () => {
   return (
     <Link to="/exercise/new">
-      <img src={buttomImg} class="Fitness-Add" />
+      <img src={buttomImg} className="Fitness-Add" />
     </Link>
   );
-}
+};
 
 export default AddButton;
